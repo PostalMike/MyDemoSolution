@@ -1,7 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//Add comment to force a commit / push to git.
 
 builder.Services.AddControllersWithViews();
 
