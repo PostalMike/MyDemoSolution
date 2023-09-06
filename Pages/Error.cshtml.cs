@@ -22,5 +22,19 @@ namespace AngularSecurityExerciseDemo.Pages
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
         }
+
+        //add a try catch that will trigger a vulnerability error
+        public int SomeBuggedTryCatchCode(int RequestId = RequestId)
+        {
+            try
+            {
+                //this will obviously fail, there should be an alert upon checking in this code.
+                int someInt += RequestId + "it's a sunny day."
+            }
+            catch(NullReferenceException ex)
+            {
+                Console.WriteLine(ex.ToString() + " something failed.");
+            }
+        }
     }
 }
