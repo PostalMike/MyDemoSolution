@@ -9,8 +9,12 @@ updates:
   - package-ecosystem: "npm" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      time: "17:27"
+      timezone: "America/New_York"
   - package-ecosystem: "nuget"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "daily"
+      time: "17:27"
+      timezone: "America/New_York"
