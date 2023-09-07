@@ -24,13 +24,12 @@ namespace AngularSecurityExerciseDemo.Pages
         }
 
         /*Without a code scanning yaml file that also checks C#, this will not be picked up by code scanning*/
-        //add a try catch that will trigger a vulnerability error
+        //add a try catch that will trigger a code scan error
         public int SomeBuggedTryCatchCode(int RequestId = 5)
         {
             try
             {
-                //this will obviously fail, there should be an alert upon checking in this code.
-                int someInt = RequestId + "it's a sunny day.";
+                int someInt = RequestId;
             }
             catch (NullReferenceException ex)
             {
