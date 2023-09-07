@@ -30,6 +30,7 @@ namespace AngularSecurityExerciseDemo.Pages
             try
             {
                 int someInt = RequestId;
+                return someInt;
             }
             catch (NullReferenceException ex)
             {
