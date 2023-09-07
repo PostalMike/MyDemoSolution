@@ -10,11 +10,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-      time: "17:27"
+      time: "05:00"
       timezone: "America/New_York"
   - package-ecosystem: "nuget"
     directory: "/"
     schedule:
       interval: "daily"
-      time: "17:27"
+      time: "05:00"
       timezone: "America/New_York"
