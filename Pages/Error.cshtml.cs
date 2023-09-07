@@ -30,7 +30,7 @@ namespace AngularSecurityExerciseDemo.Pages
             try
             {
                 //this will obviously fail, there should be an alert upon checking in this code.
-                int someInt += RequestId + "it's a sunny day."
+                int someInt = RequestId + "it's a sunny day.";
             }
             catch (NullReferenceException ex)
             {
