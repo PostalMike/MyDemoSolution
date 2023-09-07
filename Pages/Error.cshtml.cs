@@ -35,6 +35,7 @@ namespace AngularSecurityExerciseDemo.Pages
             catch (NullReferenceException ex)
             {
                 Console.WriteLine(ex.ToString() + " something failed.");
+                return 7;
             }
         }
     }
