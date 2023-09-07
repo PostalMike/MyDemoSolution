@@ -25,18 +25,17 @@ namespace AngularSecurityExerciseDemo.Pages
 
         /*Without a code scanning yaml file that also checks C#, this will not be picked up by code scanning*/
         //add a try catch that will trigger a vulnerability error
-        //add a try catch that will trigger a vulnerability error
-        //public int SomeBuggedTryCatchCode(int RequestId = RequestId)
-        //{
-        //    try
-        //    {
-        //        //this will obviously fail, there should be an alert upon checking in this code.
-        //        int someInt += RequestId + "it's a sunny day."
-        //    }
-        //    catch(NullReferenceException ex)
-        //    {
-        //        Console.WriteLine(ex.ToString() + " something failed.");
-        //    }
-        //}
+        public int SomeBuggedTryCatchCode(int RequestId = RequestId)
+        {
+            try
+            {
+                //this will obviously fail, there should be an alert upon checking in this code.
+                int someInt += RequestId + "it's a sunny day."
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine(ex.ToString() + " something failed.");
+            }
+        }
     }
 }
