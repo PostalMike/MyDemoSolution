@@ -10,13 +10,11 @@ updates:
     directory: "/ClientApp" # Location of package manifests
     schedule:
       interval: "daily"
-      cron: '48 11 * * *'
-      #time: "05:00"
-      #timezone: "America/New_York"
+      time: "11:52"
+      timezone: "America/New_York"
   - package-ecosystem: "nuget"
     directory: "/"
     schedule:
       interval: "daily"
-      cron: '48 11 * * *'
-      #time: "05:00"
-      #timezone: "America/New_York"
+      time: "11:52"
+      timezone: "America/New_York"
